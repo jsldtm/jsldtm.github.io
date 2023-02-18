@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang = "es"> <!-- Abreviación del lenguaje de la página -->
+  <head>
+    <meta charset = "utf-8"> <!-- Sirve para  para definir compatibilidad de pixeles -->
+    <title> HTML Cheat Sheet - Joaquín Saldariaga </title>
+  </head>
+  <body> <!-- El contenido que se va a ver en la página web -->
+    <h1> HTML Cheat Sheet - Joaquín Saldariaga </h1>
+    
+    <h2> Tag 1: 'a' </h2>
+    
+        <!-- 'p' es de bloque; 'a' es de línea :o -->
+        <p> El elemento 'a' se usa para incluir hyperlinks, que son
+            links externos a otras páginas web. Es un elemento de bloque! </p>
+        <p> Por ejemplo: <a href = "https://tinyurl.com/4wnrkkzx"> <!-- #NeverGonnaGiveYouUp -->
+            El siguiente link muestra un video de c&oacute;mo funcionan
+            los hyperlinks! </a> </p>
+
+    <h2> Tag 2: 'p' </h2>
+    
+        <!-- 'p' es de bloque; 'a' es de línea :o -->
+        <p> El elemento 'p' es un elemento de línea.
+            Se usa para escribir texto de párrafo. </p>
+        <p> Por ejemplo: escribir el código '< p > Hola! < /p >
+            resultará en el texto 'Hola!' </p>
+
+    <h2> Tag 3: 'h1 ... h6' </h2>
+    
+        <!-- Los headings -->
+        <p> Éstos son los seis tipos de encabezados; 
+            mientras más pequeño el número (e.g. 'h1') más
+            grande será la letra del encabedazo. Usualmente, 'h1'
+            se usa para el título de la página. </p>
+        <p> Por ejemplo: < h1 >:  <h1> Título! </h1>
+                         < h2 >:  <h2> Subtítulo! </h2>
+                         < h3 >:  <h3> Encabezado 3! </h3>
+                         < h4 >:  <h4> Encabezado 4! </h4>
+                         < h5 >:  <h5> Encabezado 5! </h5> 
+                         < h4 >:  <h6> Encabezado 6! </h6> </p>
+
+    <h2> Tag 4: 'div' </h2>
+        
+        <p> Su nombre es la abreviación de la palabra 'división';
+            a partir de lo anterior, ya sabemos que sirve para crear 
+            secciones en la página, o agruparlas. </p>
+        <p> Por ejemplo, el código 
+            '< div class = "miDivisión">
+                < h2 > Este es el encabezado de una división < /h2 >
+                < p > Este es el texto de la división 'miDivisión'. < /p >
+            < /div >'; resultaría así: </p>
+            <div class = "miDivisión">
+                <h2> Este es el encabezado de una división </h2>
+                <p> Este es el texto de la división 'miDivisión'. </p>
+            </div>
+
+    <h2> Tag 5: 'span' </h2>
+    
+        <p> El elemento 'span' es un contenedor de línea que
+            se usa para agrupar varios elementos (como los mencionados
+            anteriormente) para estilizar/"diseñar" visualmente la página.
+        <p> Por ejemplo, vamos a nombrar marcas de carros en un texto,
+            cada una con un color diferente: </p>
+        <p> Unas marcas son: <span style = "color: blue"> Ford </span>, 
+            <span style = "color: red"> Ferrari </span>, y
+            <span style = "color: Aqua"> BMW </span> </p>
+
+        <p> Para diferenciar colores, este fue el código: '[...] son: < span style = "color: blue" > Ford < /span >,'. </p>
+        <p> En la parte de 'style' se define un estilo particular para el texto que sigue (font o color),
+        en la parte de 'color' se pone el nombre del color del texto, o su código Hexadecimal;
+        seguido por el texto que se pondrá en el color mencionado </p>
+        <p> <a href = "https://www.w3schools.com/tags/tag_span.asp">
+            Este es el link de la referencia para la explicación anterior! :) </a> </p>
+
+    <h2> Tag 6: 'strong' </h2>
+    
+        <p> En Word, existe la opción de poner un texto en <strong> negrilla </strong>, no?
+            En HTML, esto mismo se conoce como el elemento 'strong'; es uno de línea. El texto que
+            esté dentro de '< strong >' es lo que se pondrá en negrilla.  </p>
+        <p> Por ejemplo, el código 'texto <strong> énfasis </strong>' se escribió así: </p>
+        <p> 'texto < strong > énfasis < /strong >'. </p>
+        
+        <p> <a href = "https://developer.mozilla.org/es/docs/Web/HTML/Element/strong">
+            Este es el link de la referencia para la <strong> explicación </strong> anterior! :) </a> </p>
+
+    <h2> Tag 7: 'i' </h2>
+    
+        <p> En Word también existe la opción de poner un texto en <i> itálica </i>, no?
+            En HTML, esto mismo se conoce como el elemento 'i'; es uno de lína. Se usa
+            para escribir texto en un todo <i> diferente </i> al usual.  </p>
+        <p> Por ejemplo, el código 'normal, y <strong> diferente </strong>' se escribió así: </p>
+        <p> 'normal, y < strong > diferente < /strong >'. </p>
+
+        <p> <a href = "https://learn.shayhowe.com/html-css/getting-to-know-html/">
+            Este es el link de la referencia para la <i> explicación </i> anterior! :) </a> </p>
+
+    <h2> Tag 8: 'u' </h2>
+    
+        <p> En HTML, para <u> subrayar </u> una palabra o texto, se usa el elemento 'u'. </p>
+        <p> Por ejemplo, el código 'no-subrayado, y <u> subrayado  </u>' se escribió así: </p>
+        <p> 'no-subrayado, y < u > diferente < /u >'. </p>
+    
+        <p> <a href = "https://developer.mozilla.org/es/docs/Web/HTML/Element/u">
+            Este es el link de la referencia para la <u> explicación </u> anterior! :) </a> </p>
+
+    <h2> Tag 9: 'b' </h2>
+    
+        <p> En HTML, para <b> compensar estilísticamente </b> una palabra o texto, se usa el elemento 'b'. 
+            También es otra opción para hacer énfasis en una parte del texto, al igual que el elemento 'strong'. </p>
+        <p> Por ejemplo, el código 'texto, y <b> texto diferente  </b>' se escribió así: </p>
+        <p> 'texto, y < b > texto diferente  < /b >'. </p>
+        
+        <p> <a href = "https://learn.shayhowe.com/html-css/getting-to-know-html/">
+            En este link aprendemos a <b> compresar </b> una parte de un texto! :) </a> </p>
+
+    <h2> Tag 10: 'strike' </h2>
+    
+        <p> En HTML, para <strike> tachar </strike> una palabra o texto, se usa el elemento 'strike'.  </p>
+        <p> Por ejemplo, el código 'palabra, y <strike> tachada </strike>' se escribió así: </p>
+        <p> 'palabra < strike > tachada  < /strike >'. </p>
+            
+        <p> <a href = "https://developer.mozilla.org/es/docs/Web/HTML/Element/strike/">
+            En este link aprendemos a <strike> tachar </strike> una parte de un texto! :) </a> </p>
+    
+    <h2> Tag 11: 'small' </h2>
+    
+        <p> En HTML, para <small> poner una parte de un texto con letra más pequeña </small> , se usa el elemento 'small'.  </p>
+        <p> Por ejemplo, el código 'letra, <small> pequeña </small>' se escribió así: </p>
+        <p> 'letra < small > pequeña  < /small >'. </p>
+
+    <h2> Tag 12: 'em' </h2>
+    
+        <p> En HTML, para <em> poner texto en itálica </em> , se usa el tag 'em'.
+        A diferencia de usar el elemento 'i', que se usa para un texto escrito con un tono <i> diferente </i> </p>
+        <p> Por ejemplo, el código 'letra en, <em> itálica </em>' se escribió así: </p>
+        <p> 'letra en < em > itálica  < /em >'. </p>        
+        
+        <p> <a href = "https://learn.shayhowe.com/html-css/getting-to-know-html//">
+            En este link aprendemos a <em> poner texto en itálica </em> ! :) </a> </p>
+
+    <h2> Tag 13: 'header' </h2>
+    
+        <p> En HTML para separar un conunto de texto o links del texto, se usa el 
+            tag '< header >'. </p>
+        <p> Por ejemplo, este elemento se usó para poner el título de esta Cheat
+            Sheet; al igual que la metadata del HTML, que se usa para definir
+            el conjunto de caracteres, y la descripción de la página.  </p>
+        <p> Por ejemplo, el código usado fue: </p>
+        <p> '< head > <br>
+            < meta charset = "utf-8" > <br>
+            < title > HTML Cheat Sheet - Joaquín Saldariaga < /title ><br>
+          < /head> </p>
+
+        <p> <a href = "https://www.w3schools.com/tags/tag_header.asp/">
+            En este link aprendemos sobre el tag 'header'. </a> </p>          
+
+    <h2> Tag 14: 'section' </h2>
+    
+        <p> Este tag se usa para identificar un grupo de contenido sobre un tema parituclar;
+            el cual usualmente necesita un encabezado ('< header >'). </p>
+        <p> Por ejemplo, el código '< section > ¡Esta es una sección aparte! < /section >' se vería así: </p>
+        <p> <section> ¡Esta es una sección aparte! </section>. </p>        
+            
+        <p> <a href = "https://learn.shayhowe.com/html-css/getting-to-know-html/">
+            En este link aprendemos el código para definir secciones de una página HMTL. </a> </p>            
+
+    <h2> Tag 15: 'article' </h2>
+    
+        <p> En HTML, definir una parte de la página, que se quiera distribuir, sea
+            para mostrar el clima de hoy, por ejemplo, se usa el tag '< article> .</p>
+        <p> Por ejemplo, el código ' Clima de hoy: < article class="day-forecast" > <br>
+            < h3 > 18 de febrero 2023 < /h3 > <br>
+            < p > Sol!. < /p > <br> < /article >'; se vería así: </p>
+        <p> Clima de hoy: <article class="day-forecast">
+            <h3> 18 de febrero 2023 </h3>
+            <p> Sol!.</p>
+        </article> </p>            
+
+        <p> <a href = "https://www.w3schools.com/tags/tag_article.asp/">
+            En este link aprendemos más sobre el tag 'article' . </a> </p>                    
+
+    <h2> Tag 16: 'aside' </h2>
+    
+        <p> En HTML, si se quiere poner texto <aside> aparte del contenido principal, </aside> se usa el tag 'aside'.
+            Usualmente, el contenido dentro de este tag debe estar relacionado indirectamente con el principal. </p>
+        <p> Por ejemplo, para la parte anterior se usó el código: '[...] texto <strong> < aside  ></strong> aparte del contenido principal, <strong> < /aside  ></strong> se usa [...]'. </p>        
+            
+        <p> <a href = "https://www.w3schools.com/tags/tag_aside.asp//">
+            En este link aprendemos más sobre este tag!! :) </a> </p>            
+
+    <h2> Tag 17: 'footer' </h2>
+    
+        <p> Este tag se usa para definir la sección de un pié de página... parecido al caso de Word, por ejemplo. </p>
+        <p> Usualmente, contiene la información de autoría, de derechos de autor, de contacto, y un enlace externo: </p>
+        <p> Por ejemplo, para lo siguiente: </p>
+
+        <footer>
+            <p> Autor: Fulanito De Tal <br>
+            <a href = "mailto:fulanito@correo.com"> fulanito@correo.com </a> </p>
+          </footer>
+            
+        <p> Se usaría el siguiente código: '< footer > <br>
+            < p > Autor: Fulanito De Tal <br>
+            < a href = "mailto:fulanito@correo.com" > fulanito@correo.com < /a > < /p > <br>
+          < /footer> '. </p>
+        
+        <p> <a href = "https://www.w3schools.com/tags/tag_footer.asp">
+            En este link aprenderemos más sobre los <i> footers </i>. </a> </p>            
+
+    <h2> Tag 18: 'nav' </h2>
+    
+        <p> En HTML, si se quiere definir un conjunto de links externos, se usa el tag 'nav'.
+            Este tag se usa únicamente para <i> sets </i> de links, no links sueltos. </p>
+        <p> Por ejemplo, para lo siguiente: </p>
+
+        <nav>
+            <a href = "google.com"> Google 1 </a> |
+            <a href = "google.com"> Google 2 </a> |
+            <a href = "google.com"> Google 3 </a> |
+        </nav>
+                
+        <p> Se usaría el siguiente código: ' < nav > <br>
+            < a href = "google.com"> Google 1 < /a > | <br>
+            < a href = "google.com"> Google 2 < /a > | <br>
+            < a href = "google.com"> Google 3 < /a > | <br>
+        < /nav > <br> </p>
+                
+        <p> <a href = "https://www.w3schools.com/tags/tag_nav.asp/">
+            En este link aprendemos más sobre este tag!! :) </a> </p>   
+
+    <h2> Tag 19: 'img' </h2>
+    
+        <p> En HTML se usa este tag cuando se quiere incluir una imagen en una página.
+            En términos del código, estas imágenes están más <i> vinculadas </i> que incluídas en una página HTML. </p>
+        <p> Este tag incluye los atributos: 'src' para la fuente de la imagen; y 'En HTML se usa este tag cuando se quiere incluir una imagen en una página.
+            En términos de código, estas imágenes están más <i> vinculadas </i> que incluídas en una página HTML. </p>
+        <p> Por ejemplo, el código '< img src = "coheteVolando.jpg" alt = "Cohete" width = "600" height = "600" > ' mostraría la siguiente imagen: </p>        
+        <img src = "coheteVolando.jpg" alt = "Cohete" width = "600" height = "600"> 
+        <p> <a href = "https://www.w3schools.com/tags/tag_img.asp/">
+            En este link aprendemos más sobre este tag!! :) </a> </p>    
+
+    <h2> Tag 20: 'br' </h2>
+    
+        <p> En el transcurso de este documento, muchas veces se ha pasado de una línea...  <br> a otra. </p>
+        <p> En términos del código, esto se hace usando el tag '< br >'; también se usa para escribir poemas en una página,
+            y para separar párrafos en la página HTML. Solamente se puede usar dentro del texto con el tag 'p'. </p>
+        <p> Por ejemplo: el código ' < p > HTML no es < br > un lenguaje de progrmación, < br > por favor no < br > digan eso :( < /p >'; se vería así:</p>
+        <p> HTML no es <br> un lenguaje de progrmación, <br> por favor no <br> digan eso :( </p>
+        
+        <p> <a href = "https://www.w3schools.com/tags/tag_br.asp/">
+            En este link aprendemos más sobre este tag! :) </a> </p>   
+
+    <h2> Tag 21: 'hr' </h2>
+    
+        <p> Este tag se usa cuando se quiera separar, de manera más evidente, una parte del texto en una página HTML. </p>
+        <p> Por ejemplo, el código '< p > C++ es un lenguaje de programación < /p > <strong> < hr > </strong> < p > HTML no es un lenguaje de programación < /p > ',
+            se vería así: </p>
+        <p> C++ es un lenguaje de programación </p> <hr> <p> HTML no es un lenguaje de programación </p>
+
+        <p> <a href = "https://www.w3schools.com/tags/tag_hr.asp">
+            En este link aprendemos más sobre este tag! :) </a> </p>   
+
+    <h2> Tag 22: 'form' </h2>
+    
+        <p> En HTML, si se quiere registrar, o simplemente recibir, información que dé el usuario,
+            preferiblemente se usaría este tag. Usualmente, ésta se manda a un servidor para ser procesada.</p>
+        <p> Dentro de este tag, se debe definir: tipo o nombre de la acción (action), nombre campos a dar datos (label); y tipo de dato a recibir, nombre de dato asociado y un ejemplo. </p>
+        <p> Por ejemplo: </p>        
+                
+        <form action = "/action_page.php">
+            <label for="nombreInicial">Nombre:</label><br>
+            <input type="text" id="nombreInicial" name="nombreInicial" value = "Fulanito" > <br>
+            <label for="elApellido">Apllido:</label><br>
+            <input type="text" id="elApellido" name="elApellido" value="De Tal"><br><br>
+            <input type="submit" value="Mandar info">
+        </form>
+
+        <p> Este sería el código: '< form action = "/action_page.php" > <br> < label for="nombreInicial" > Nombre:</label><br>
+            < input type="text" id = "nombreInicial" name = "nombreInicial" value = "Fulanito" > <br>
+            < label for = "elApellido">Apllido: < /label > <br>
+            < input type = "text" id = "elApellido" name = "elApellido" value = "De Tal" > <br><br>
+            < input type = "submit" value = "Mandar info" >
+        </form></p>
+        
+        <p> Por convención, el nombre del 'tipo de dato', los nombres de éstos ("name"), al igual que la parte de 'etiqueta' (<i>label</i>) se establecen en inglés. </p>
+
+        <p> <a href = "https://www.w3schools.com/html/html_forms.asp">
+            En este link aprendemos más sobre este tag!! :) </a> </p>        
+
+    <h2> Tag 23: 'table' </h2>
+    
+        <p> Al igual que en HTML se puede hacer un "cuestionario" con el tag '< form >', también se puede hacer tablas con el tag <strong> '< table >' </strong></p>
+        <p> Dentro de este tag se definen las columnas de ésta (como <i>puntaje</i> o <i>número</i>) como 'th' (encabezado de tabla), al igual que los contenidos de
+            ésta como 'td' (data de la tabla). También, cada el contenido de cada fila se define como 'tr' (table row). Por ejemplo: </p>
+            
+            <style>
+                table {
+                  font-family: arial, sans-serif; 
+                  border-collapse: collapse;
+                  width: 70%;
+                }
+                
+                td, th {
+                  border: 1.5px solid #6a6a6a;
+                  text-align: left;
+                  padding: 7px;
+                }
+                
+                tr:nth-child(even) {
+                  background-color: #d1d1d1;
+                }
+            </style>
+
+            <table>
+              <tr>
+                <th> Equipo </th>
+                <th> Puntaje </th>
+              </tr>
+              <tr>
+                <td> Red Bull </td>
+                <td> 100 </td>
+              </tr>
+              <tr>
+                <td> Alpine </td>
+                <td> 90 </td>
+              </tr>
+            </table>
+        
+            <p> Este sería el código de la tabla anterior: </p>
+        
+            <p>
+             < table > <br>
+                < tr > <br>
+                  < th > Equipo < /th > <br>
+                  < th > Puntaje < /th > <br>
+                < /tr > <br>
+                < tr > <br>
+                  < td > Red Bull < /td > <br>
+                  < td > Alpine < /td > <br>
+                < /tr > <br>
+                < tr > <br>
+                  < td > 100 < /td > <br>
+                  < td > 90 < /td > <br>
+                < /tr > <br>
+              < /table ></p>
+
+            <p> <a href = "https://www.w3schools.com/html/html_tables.asp/">
+            En este link aprendemos más sobre este tag, y cómo hacer el diseño de las tablas! :) </a> </p> 
+
+    <h2> Tag 24: 'ul' </h2>
+    
+        <p> Este tag se usa cuando se quiere definir una lista con "bullet points", en una página HTML. </p>
+        <p> La lista en sí se define <i> dentro </i> de este tag, usando el tag '< li >'; el cual define el elemento de la lista (como 'cuaderno'). </p>
+        <p> Por ejemplo, esta es una lista de útiles de una clase: </p>
+
+        <ul>
+            <li> Bolígrafo </li>
+            <li> Laptop </li>
+            <li> Cuaderno </li>
+        </ul>
+
+        <p> Y este sería el código: <br> < ul > <br>
+            < li > Bolígrafo < /li > <br>
+            < li > Laptop < /li > <br>
+            < li > Cuaderno < /li > <br>
+        < /ul > </p>
+    
+        <p> <a href = "https://www.w3schools.com/tags/tag_ul.asp/">
+            En este link aprendemos más sobre este tag! :) </a> </p>   
+
+    <h2> Tag 25: 'ol' </h2>
+    
+        <p> Al igual que se puede definir una lista en HTML con el tag 'ul', con el tag <strong> 'ol' </strong>
+            se puede definir una lista numerada; puede empezar en el '1' o en el número que uno quiera. </p>
+        <p> Por ejemplo el código de esta lista, que empieza en el núemro <strong> '3' </strong> sería: </p>
+          <ol start = "3">
+            <li> Bolígrafo </li>
+            <li> Laptop </li>
+            <li> Cuaderno </li>
+          </ol>
+
+        <p> Sería: <br> < ol start = "3" > <br>
+            < li > Bolígrafo < /li > <br>
+            < li > Laptop < /li > <br>
+            < li > Cuaderno < /li > <br>
+          < /ol > </p>
+        
+        <p> <a href = "https://www.w3schools.com/tags/tag_ol.asp/">
+            En este link aprendemos más sobre este tag! :) </a> </p>   
+
+  </body>
+</html>
