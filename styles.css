@@ -106,9 +106,9 @@ body  {
     div.positionAbsolute {
 
         position: absolute;
-        top: 12000px;
+        top: 10000px;
         right: 0;
-        width: 100px;
+        width: 150px;
         height: 100px;
         background-color: #3788d9;
         border: 3.5px solid #49c024;
