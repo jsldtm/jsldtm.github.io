@@ -1,0 +1,125 @@
+h1 {color: darkblue; font-size: 32px;}
+
+h1 {border-top: 4px solid darkblue;}
+h2 {border-bottom: 5px double darkcyan;}
+h2 {border-right: 5px dotted darkcyan;}
+p {border-left: 4px dotted darkgreen;}
+
+#elEjemploBorderRad {
+    border: 3px dashed red;
+    padding: 1px;
+    border-radius: 25px;
+}
+
+p.dotted {border-style: dotted;}
+
+p.dashed {border-style: dashed;}
+
+body  {
+    background-image: url("fondoParaCSS.PNG");
+    background-color: #50d6c2;
+    }
+
+    p.calibri {
+        font: 16px Calibri, sans-serif;
+        font-weight: 900;
+    }
+    
+    p.italicaCambria {
+        font: italic bold small-caps 18px Cambria, serif; 
+    }
+
+    divEjemplo {
+
+        height: 50px;
+        width: 110%;
+        border: 2.5px solid #4c78af;
+
+    }
+    
+    ul.a {list-style-position: outside;}
+    ul.a {list-style-type: square;}
+
+    divBorde {
+
+        border: 3px solid rgb(24, 173, 26);
+        margin-top: 20px;
+        margin-bottom: 30px;
+        margin-right: 45px;
+        margin-left: 50px;
+        background-color: rgb(33, 148, 186);
+
+    }
+
+    divPadding {
+
+        padding: 10px;
+        border: 1.5px solid #2abc6c;
+
+    }
+
+    #ejemploDeOverflow {
+
+        background: #2abc6c;
+        color: white;
+        padding: 10px;
+        width: 45%;
+        height: 80px;
+        overflow: scroll;
+        border: 4.5px solid #149288;
+    
+    }
+    
+    p.ejemploDisplay1 {display: inline;}
+    p.ejemploDisplay2 {display: block;}
+    p.ejemploDisplay3 {display: inline-block;}
+
+    div.positionRelative {
+        position: relative;
+        padding: 4px;
+        left: 20px;
+        border: 4px solid #53be25;
+    }
+
+    div.positionSticky {
+
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        padding: 4px;
+        background-color: #e9cd69;
+        border: 3px solid #55e12a;
+
+    }
+
+    div.positionFixed {
+        
+        position: fixed;
+        bottom: 0;
+        right: 100;
+        width: 200px;
+        background-color: #69a9e9;
+        border: 3.5px solid #4ad420;
+        
+    }
+
+    div.positionAbsolute {
+
+        position: absolute;
+        top: 12000px;
+        right: 0;
+        width: 100px;
+        height: 100px;
+        background-color: #3788d9;
+        border: 3.5px solid #49c024;
+    
+    }
+
+    div.positionStatic {
+
+        position: static;
+        border: 3.5px solid #67ad21;
+
+    }
+
+    img {filter: grayscale(100%);}
