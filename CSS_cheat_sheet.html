@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/Styles.css">
+        <title> CSS Cheat Sheet - Joaquín Saldariaga </title>
+        
+    </head>
+
+    <style>
+
+    </style>
+
+    <body>
+        
+        <h1> CSS Cheat Sheet - Joaquín Saldariaga </h1>
+        <p> HTML es un "lenguaje de marcado" (<i> no </i> de programación) con el cual
+        se puede modificar cómo se muestra el texto en pantalla. Se puede <strike> tachar</strike>
+        palabras, hacer <i> énfasis </i> en lo escrito, <u> subrayar</u>, poner texto en 
+        <strong> negrilla</strong>, y hasta poner texto en un  <span style = "color: red"> color </span> 
+        diferente. </p>
+
+        <p> Los comandos HTML, y sus "<i>palabras clave</i>", son una caja de herramientas que
+            le permiten al programador jugar con la visualización del texto en una página web. </p>
+            
+        <p> También hay un lenguaje de <i>estructuración</i>, llamado 'CSS'. Primero se hace el código HTML y
+            luego, en otro archivo <i><strong>separado</strong></i>, el de CSS. En éste se define el diseño
+            y presentación de la página web HTML, y sus elementos. Estos son algunas propiedades que maneja:  </p>
+
+        <h2> Borders </h2>
+
+            <p> Esta propiedad 'borde' permite especificar el estilo, ancho y color
+                del borde de un elemento de texto (como 'párrafo'). Por ejemplo: </p>
+
+            <p class = "dotted"> Este texto tiene un borde punteado.</p>
+            <p class = "dashed"> Este texto tiene un borde discontinuo.</p>
+            
+            <p> Para el código CSS del primer ejemplo, se definió la propiedad 'p.dotted', 
+                y luego entre llaves '{}' el estilo de borde ("border style") 'punteado'. <br>
+            
+            'p.dotted {border-style: dotted;}' <br> <br>
+        
+            En cambio, para el segundo ejemplo se definió el estilo de borde 'dashed' (discontinuo): <br> 
+            'p.dashed {border-style: dashed;}' </p>
+
+            <p> <a href = "https://www.w3schools.com/css/css_border.asp">
+                Este es el link de la referencia para la explicación anterior! :) </a> </p>        
+
+        <h2> 'Border-left', '-right', '-top' y '-bottom' </h2>
+        
+            <p> Esta propiedad permite especificar el <i>tipo</i> (como 'punteado') y <i>color</i> de un
+                borde en la parte superior (top) o inferior (bottom), o a los lados (left/right) de la página web
+                HTML. </p>
+
+            <p> Por ejemplo, note que en todos los encabezados 'h2', en este caso siendo los nombres de las
+                propiedades modificables con CSS, tienen un borde  <strong><span style = "color: green"> verde</span></strong>.</p>
+                
+            <p> Para ello, se tuvo que definir el elemento que tendrá un borde ('h2', en este caso), y entre llaves
+                poner 'border-right', principalmente porque el borde estará en la parte <i>izquierda</i>, el grosor
+                y tipo de borde (5 puntos; punteado); y por último el color (cian oscuro; 'darkcyan')
+                Este fue el código:</p>
+
+                "h2 {border-right: 5px dotted darkcyan;}"
+
+            <p> El mismo orden de componentes mencionados se aplica en el código CSS para:
+                poner un borde en la parte superior de los 'h1' (como el título de la página),
+                poner un borde en la parte inferior de los 'h2', y poner un borde del lado
+                izquierdo de los textos 'p' (como este texto): </p>
+            
+            <p> "h1 {border-top: 4px solid darkblue;}" </p>
+            <p> "h2 {border-bottom: 5px double darkcyan;}" </p>
+            <p> "p {border-left: 4px dotted darkgreen;}" </p>
+
+            <p> <a href = "https://www.w3schools.com/css/css_border_sides.asp">
+                Este es el link de la referencia para la explicación anterior! :) </a> </p>
+
+        <h2> Border-radius </h2>
+
+            <p> Al igual que con código CSS se puede modificar el tipo de borde, el color y el grosor,
+                también se puede definir el grosor de las <i>esquinas</i> de un elemento. Cuanto más grande
+                sea el valor de esta propiedad (1px, 2px...), más circular será la forma del borde. Por ejemplo: </p>
+            
+            <div id = "elEjemploBorderRad">
+                <p> Este es un ejemplo de usar la propiedad 'border-radius'!</p>
+            </div>
+            
+            <p> Para el ejemplo anterior, en el script CSS, se tuvo que denominar la sección
+                "#<strong>elEjemploBorderRad</strong>", y luego abrir llaves. Dentro, definir
+                el grosor, tipo y color del borde ('3px dashed red'), el grosor del "relleno" del borde
+                (padding: 1px;), y por último el radio del borde ('25px') el texto en una sección aparte ('div'),
+                este fue el código: </p>
+
+            <p> #elEjemploBorderRad { <br>
+                    border: 3px dashed red; <br>
+                    padding: 1px; <br>
+                    border-radius: 25px; <br> 
+                } </p>
+            
+            <p> <a href = "https://www.w3schools.com/cssref/css3_pr_border-radius.php">
+                Este es el link de la referencia para la explicación anterior! :) </a> </p>
+
+        <h2> Background-image </h2>
+
+            <p> Como habrá notado, esta página HTML tiene una imagen en el fondo. La propiedad 'background-image' permite
+                que se ponga una imagen de fondo para la página HTML. Se define en un archivo CSS aparte, que se define como
+                referencia en el código de este HTML; en la cual se crea una sección 'body', y ahí entre llaves de define la fuente ('url')
+                de la imagen, al igual que un color de fondo, parituclarmente su valor hexadecimal, que será un "respaldo"
+                si la imagen no está disponible. En este caso, se definió así el código: </p>
+
+            <p> body { <br>
+                background-image: url("fondoParaCSS.PNG"); <br>
+                background-color: #50d6c2; <br>
+                } </p>
+
+            <p> <a href = "https://www.w3schools.com/cssref/pr_background-image.php">
+                En este link aprendemos más sobre fondos de páginas HTML, con CSS! :) </a> </p>
+        
+        <h2> Color </h2>
+
+            <p> En el transcurso del texto en esta página HTML, se ha mencionado la palabra 'color'; ya sea refiriéndonos al del fondo
+                o al de una <span style = "color: rgb(255, 162, 0)"> palabra </span> particular. Una de las propiedades de una página
+                que se puede modificar con CSS es la de 'color'.
+                
+                Por ejemplo, a continuación vamos a mostrar tres frases de texto, con color diferente: </p>
+
+                <p style = "color: DodgerBlue;"> Este es un texto con color diferente al del texto.</p>
+                <p style = "color: Tomato;"> El nombre del color de esta frase literalemnte es "tomato" ('tomate', en inglés).</p>
+            
+            <p> Para el código anterior, se empieza con el elemento HTML de texto 'p', luego se usa la "palabra clave" 'style', que define
+                un estilo a usar; el cual en este caso será 'color', y por último se define el nombre del color o su valor hexadecimal.
+                Luego se escribe el texto a incluir en tal color, y se cierra la frase con el elemento 'p' ("< /p >"): </p>
+
+            <p> "< p style = "color: DodgerBlue;" > Este es un texto con color diferente al del texto. < /p >" </p>
+        
+            <p> <a href = "https://www.w3schools.com/css/css_colors.asp">
+                En este link aprendemos más sobre esta propiedad de CSS! :) </a> </p>
+
+        <h2> Font; Font-family; Font-style; Font-weight </h2>
+
+            <p> Esta propiedad maneja todo lo que se refiere a las letras, al texto, que se muestra en una página web. Algunos de sus 'tipos'
+                son: 'font-family', '-size', y '-style'. Por ejemplo: </p>
+
+            <p class = "calibri"> "En esta frase, el tamaño de fuente ('font-size') se establece en 16 píxeles y la 'font-family' es Calibri".
+                También, el 'font-weight', que establece qué tan gruesas son las letras, es de 900. </p>
+
+            <p class = "italicaCambria"> "En esta frase, el texto está en itálica y negrilla, con versalitas; las letras minúsculas son mayúsculas.
+                También, el 'font-size' es de 18 pixeles, y la 'font-family' es Cambria.</p>
+
+            <p> <a href = "https://www.w3schools.com/cssref/pr_font_font.php">
+                En este primer link aprendemos más sobre estas propiedades de CSS! :) </a> </p>
+
+            <p> <a href = "https://www.w3schools.com/cssref/pr_font_weight.php">
+                En este segundo link aprendemos más sobre estas propiedades de CSS! :) </a> </p>
+
+        <h2> Width y height </h2>
+
+            <p> Estas dos propiedades manejan qué tan alto y ancho será un elemento.
+                Usualmente, estas propiedades de definen en una sección 'div' dentro
+                del elemento "style" de un HTML. Después del de "head". Ahí se definen
+                la altura (height) y el ancho ('width') del elemento 'div'; al igual que 
+                el grosor, tipo (como 'solid' o 'dashed'), y color de éste. Por ejemplo: </p>
+
+            <divEjemplo> Este elemento 'div' tiene 50pixeles de altura, y un ancho de 110%. 
+                El borde es de 2.5 pixeles, y el color es casi azul. </divEjemplo>
+
+            <p> Este fue el código del elemento 'div' anterior: </p>
+            <p> div { <br>
+                    height: 50px; <br>
+                    width: 110%; <br>
+                    border: 2.5px solid #4c78af; <br>
+                } </p>
+
+            <p> <divEjemplo> <a href = "https://www.w3schools.com/css/css_dimension.asp">
+                En este link aprendemos más sobre estas propiedades de CSS! :) </a> </divEjemplo> </p>
+                
+        <h2> List-style </h2>
+            
+            <p> El nombre de esta propiedad es abreviación de las siguientes:
+                "<strong>list-style</strong>-type" (tipo), "-position" (posición),
+                y "-image" (imagen). Si no se define uno de esos valores,
+                se usará el predetemrinado. Al igual que otras propiedades mencionadas,
+                ésta se establece en un archivo CSS aparte (y usado como referencia). Por ejemplo: </p>
+
+            <ul class="a"> 
+                <li> En el código de la lista, se denominó el nombre <strong>'ul.a'</strong>.
+                    Entonces la 'clase' de la lista, como propiedad, es 'a'. </li>
+                <li> Esta lista tiene 'posición' <i>outside</i>; es por eso que el texto
+                    está alineado, y "bullet point" está a un lado. </li>
+                <li> También, el 'tipo' de esta lista es 'cuadrada'; por eso el "bullet point"
+                    tiene forma cuadrada! </li>
+            </ul>
+
+            <p> Este fue el código para lo anterior: </p>
+            <p> ul.a {list-style-position: outside;} <br>
+                ul.a {list-style-type: square;} </p>
+
+            <p> <a href = "https://www.w3schools.com/cssref/pr_list-style.php">
+                En este link aprendemos más sobre estas propiedades de CSS! :) </a> </p>
+
+            <p> <a href = "https://www.w3schools.com/cssref/pr_list-style-position.php">
+                En este otro link aprendemos más sobre estas propiedades de CSS! :) </a> </p>
+        
+        <h2> Margin </h2>
+
+            <p> La esencia de esta propiedad, es establecer, <i>crear</i>, un espacio alrededor
+                de los elementos en una página HTML; esto fuera de los bordes (de éstos) definidos.
+                Se define en un archivo CSS aparte; que se define usado como referencia) en el código del HTML. </p>
+
+            <p> Supongamos que un elemento, como un rectángulo por ejemplo, está en el centro de una
+                página HTML vacía. Entre su borde superior y el de la página hay una distancia 'x', entre 
+                los inferiores 'y', y de los lados 'z' y 'w'. Estas 'distancias', y qué tan grandes son, son los
+                "espacios" a los que nos referimos. </p>
+
+            <p> Como en el analogía anterior, esta propiedad de CSS tiene sus tipos: "margin-top", "-right",
+                "-left", y "-bottom". Cada uno tiene los siguientes valores: </p>
+
+            <ul class = "a"> 
+                <li> <strong>'Auto'</strong> - Se usa para que el mismo buscador, 
+                    en el cual se muestra la página web, calcule el margen. </li>
+                <li> <strong>'Length'</strong> - Especifica la "distancia" o longitud
+                    del margen; ya sea en pixeles ('px'), centímetros ('cm') o puntos ('pt'). </li>
+                <li> <strong>'Porcentaje %'</strong> - Especifica al margen, como un
+                    porcentaje del ancho del elemento referente. </li>
+                <li> <strong>'Inherit'</strong> - Este 'valor' especifica que el margen
+                    debe ser heredado del elemento <i>padre</i>. </li>
+
+            </ul> 
+
+            <p> Por ejemplo: </p>     
+            
+            <divBorde> Este elemento divisor ('div') tiene un margen superior de 20px,
+                       uno inferior de 30px, derecho de 45px; e izquierdo de 50px.
+                       También, este elemento, denominado 'divBorde', es de color
+                       casi-azul; y tiene un borde de color verde. </divBorde>
+
+            <p> Este fue el código para lo anterior:</p>
+
+            <p> divBorde { <br>
+
+                    border: 3px solid rgb(24, 173, 26); <br>
+                    margin-top: 20px; <br>
+                    margin-bottom: 30px; <br>
+                    margin-right: 45px; <br>
+                    margin-left: 50px; <br>
+                    background-color: rgb(33, 148, 186); <br>
+
+            } </p>
+
+            <p> <a href = "https://www.w3schools.com/css/css_margin.asp">
+                En este link aprendemos más sobre esta propiedad de CSS! :) </a> </p>            
+        
+        <h2> Padding </h2>
+
+            <p> Si la propiedad de 'margin' define entre los borde de un elemento y el de
+                la página HTML; esta propiedad 'padding' es lo opuesto: define el margen entre
+                el texto de un elemento, y los bordes de éste. De los valores de la propiedad 
+                'margin', la de 'padding' tiene todas excepto 'auto'. </p>
+
+            <p> La palabra 'padding' es 'relleno' en inglés; por eso lo mencionado en el párrafo
+                anterior. Adicionalmente, también están los 'lados' de los bordes; como 'padding-top',
+                '-bottom', '-right', y '-left'. Este es un ejemplo: </p>
+
+            <divPadding> Este elemento tiene un 'padding' de 10px. </divPadding>
+            
+            <p> Este  fue el código para el 'padding' anterior:</p>
+
+            <p> divPadding { <br>
+
+                padding: 10px; <br>
+                border: 1.5px solid #2abc6c; <br>
+                
+            } </p>
+
+            <p> <a href = "https://www.w3schools.com/css/css_padding.asp">
+                En este link aprendemos más sobre esta propiedad de CSS! :) </a> </p>  
+
+        <h2> Overflow </h2>
+            
+            <p> Esta propiedad especifica si hay que recortar el contenido, o agregar
+                una barra de desplazamiento (para el 'mouse'), cuando el contenido de
+                un elemento es demasiado grande para caber en el área especificada. Es
+                como un punto medio entre las propiedades 'margin' y 'padding'. </p>
+
+            <p> Esta propiedad tiene los siguientes valores: </p>
+            
+            <ul class = "a"> 
+                <li> <strong>'Visible'</strong> - Este es el valor predeterminado; indica que
+                    el 'overflow' (<i>desboramiento</i>, en español) no está recortado y
+                    que el contenido del elemento se representa fuera de sus bordes. </li>
+
+                <li> <strong>'Hidden'</strong> - Indica que el desbordamiento está recortado
+                    y que el resto del contenido será prácticamente invisible. </li>
+
+                <li> <strong>'Scroll'</strong> - Indica que el desbordamiento está recortado y se
+                    agrega una <i>barra de desplazamiento</i> para poder ver el resto del contenido. </li>
+
+                <li> <strong>'Auto'</strong> - Valor similar a 'scroll'; la diferencia es que agrega
+                    barras de desplazamiento cuando es necesario. </li>
+
+            </ul>
+
+            <p> Esta propiedad se define en la parte se define en un archivo CSS aparte; que se
+                define usado como referencia) en el código del HTML. Este es un ejemplo: </p>
+
+            <div id = "ejemploDeOverflow"> En esta cajita de texto se aplica la propiedad de
+                'overflow'. El fondo es de color verde, y el borde de color cian. Si se fijan,
+                el texto está tan largo que no cabe dentro del borde de este elemento; un
+                rectángulo. Entonces se puso una "barra de desplazamiento" en la parte 
+                derecha e inferior de éste. En serio, el texto está muy largo. </div>
+                
+            <p> Este fue el código para el ejemplo anterior: </p>
+
+            <p> #ejemploDeOverflow { <br>
+                    background: #2abc6c; <br>
+                    color: white; <br>
+                    padding: 10px; <br>
+                    width: 45%; <br>
+                    height: 80px; <br>
+                    overflow: scroll; <br>
+                    border: 4.5px solid #149288; <br>
+                } </p>
+                
+            <p> <a href = "https://www.w3schools.com/css/css_overflow.asp">
+                En este link aprendemos más sobre esta propiedad de CSS! :) </a> </p>  
+            
+        <h2> Display </h2>
+            
+            <p> Esta propiedad especifica el comportamiento la <i>visualización</i>, 
+                el tipo de cuadro de representación, de un elemento. Se puede aplicar
+                'en la línea' ('in-line'), como un 'bloque' o 'bloque de línea'. </p>
+
+            <p> También se define en un archivo CSS aparte; que se define usado
+                como referencia) en el código del HTML. Por ejemplo. </p>
+
+            <div> Este es un ejemplo de <p class = "ejemploDisplay1"> 'display in-line'. </p> </div>
+            <div> Ejemplo de <p class = "ejemploDisplay2"> 'display como bloque'. </p> </div>
+            <div> Ejemplo de <p class = "ejemploDisplay3"> 'display como bloque de línea.' </p> </div>
+
+            <p> Como habrá notado, en el segundo ejemplo el texto salta de una línea a otra;
+                y el tercer ejemplo el borde punteado del texto está algo movido hacia la derecha! </p>
+            <p> Este fue el código para definir esta propiedad: </p>
+            <p> p.ejemploDisplay1 {display: inline;} <br>
+                p.ejemploDisplay2 {display: block;} <br>
+                p.ejemploDisplay3 {display: inline-block;} <br> </p>
+            
+            <p> <a href = "https://www.w3schools.com/cssref/pr_class_display.php">
+                En este link aprendemos más sobre esta propiedad de CSS! :) </a> </p>  
+
+        <h2> Position </h2>
+            
+            <p> Esta propiedad especifica el tipo de método de "<i>posicionamiento</i>"
+                utilizado para un elemento: como relativo, pegajoso, fijo, estático o
+                absoluto: </p>
+
+            <ul class = "a"> 
+
+                <li> <strong>'Relative'</strong> - Un elemento con este tipo de posición,
+                    se posiciona relativamente a su posición normal. </li>
+    
+                <li> <strong>'Sticky'</strong> - Un elemento con este tipo de posición, se
+                    posiciona en función de la posición de desplazamiento del usuario. </li>
+
+                <li> <strong>'Fixed'</strong> - Un elemento con este tipo de posición se
+                    coloca en relación con la "ventana gráfica". Permanece en el mismo
+                    lugar, incluso si se desplaza la página. Sus propiedades, como
+                    (parte) 'superior' e 'inferior', se utilizan para posicionarlo. </li>
+    
+                <li> <strong>'Static'</strong> - Un elemento con este tipo de posición
+                    no se posiciona de manera particular; siempre se posiciona de
+                    acuerdo con el <i>flujo normal</i>  de la página HTML. </li>
+    
+                <li> <strong>'Absolute'</strong> - Un elemento con este tipo de posición se
+                    coloca en relación con el elemento anterior más cercano. Esto en vez
+                    de posicionarse en relación con la ventana gráfica, como <i>fijo</i>. </li>
+    
+            </ul>
+
+            <p> Esta propiedad también se define en un archivo CSS aparte; que se define usado como referencia)
+                en el código del HTML. Los ejemplos de tipos de posición están alrededor de la página; como estos: </p>
+
+            <div class = "positionRelative"> Este elemento 'div' tiene un tipo de posición "relativo" (relative). </div> <br>
+            <div class = "positionSticky"> Este elemento 'div' tiene un tipo de posición "pegajoso" (sticky). </div> <br>
+            <div class = "positionFixed"> Este elemento 'div' tiene un tipo de posición "fijo" (fixed). Muy seguramente
+                lo verás desde el inicio de la página HTML, en la parte inferior. </div> <br>
+            <div class = "positionStatic"> Este elemento 'div' tiene un tipo de posición "estático" (static). </div> <br>
+            <div class = "positionAbsolute"> Este elemento 'div' tiene un tipo de posición "absoluto" (absolute). </div>
+            
+            <p> Estos fueron los códigos hechos para darle formato a los ejemplos anteriores; como se dará cuenta,
+                esta propiedad se define de manera muy similar a las anteriores: </p>
+            
+            <p> <strong>div.div.positionRelative { </strong> <br>
+                
+                    position: relative; <br>
+                    padding: 4px; <br>
+                    left: 20px; <br>
+                    border: 4px solid #53be25; <br>
+                <strong> } </strong> <br> <br>
+        
+                <strong>div.positionSticky { </strong> <br>
+                
+                    position: -webkit-sticky; <br>
+                    position: sticky; <br>
+                    top: 0; <br>
+                    padding: 4px; <br>
+                    background-color: #e9cd69; <br>
+                    border: 3px solid #55e12a; <br>        
+                <strong> } </strong> <br> <br>
+                
+                <strong>div.positionFixed { </strong> <br>
+                
+                    position: fixed; <br>
+                    bottom: 0; <br>
+                    right: 100; <br>
+                    width: 200px; <br>
+                    background-color: #69a9e9; <br>
+                    border: 3.5px solid #4ad420; <br>
+                <strong> } </strong> <br> <br>
+        
+                <strong>div.positionAbsolute { </strong> <br>
+                
+                    position: absolute; <br>
+                    top: 12000px; <br>
+                    right: 0; <br>
+                    width: 100px; <br>
+                    height: 100px; <br>
+                    background-color: #3788d9; <br>
+                    border: 3.5px solid #49c024; <br>
+                <strong> } </strong> <br> <br>
+        
+                <strong>div.positionStatic { </strong> <br>
+        
+                    position: static; <br>
+                    border: 3.5px solid #67ad21; <br>
+                <strong> } </strong> <br> </p>
+
+            <p> <a href = "https://www.w3schools.com/css/css_positioning.asp">
+                En este link aprendemos más sobre esta propiedad de CSS! :) </a> </p>  
+        
+        <h2> Filter </h2>
+
+            <p> Esta propiedad define los efectos visuales, como 'blur' y saturación
+                de imagen o color, a un elemento (a menudo '< img >'; imagen). </p>
+
+            <p> Esta propiedad también se define en un archivo CSS aparte, que se define
+                usado como referencia) en el código del HTML; al igual que casi todas las demás
+                propiedades descritas anteriormente. Este es un ejemplo de 'filter'; aplicando
+                el filtro de 'grayscale': </p>
+
+            <img src="fotoDeUnaManzana.PNG" alt="Una Manzana" width="450" height="300">
+
+            <p> Este fue el código para lo anterior; en el archivo 'CSS' y para poner la imagen: </p>
+
+            <p> <strong>'Style'</strong>: "img {filter: grayscale(100%);}" </p>
+            <p> <strong>'Archivo CSS'</strong>: "< img src (fuente) = "fotoDeUnaManzana.PNG" alt (título) ="Una Manzana" width = "450" height = "300">" </p>
+
+            <p> <a href = "https://www.w3schools.com/cssref/css3_pr_filter.php">
+                En este link aprendemos más sobre esta propiedad de CSS! :) </a> </p>  
+
+    </body>
+
+</html>
