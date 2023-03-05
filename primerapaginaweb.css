@@ -1,0 +1,351 @@
+*{
+
+    box-sizing: border-box;
+
+}
+
+body {
+
+
+    background-color: #B97D2D;
+    margin: 0;
+    padding: 0;
+    
+}
+
+div {
+
+    border: 0px solid black;
+
+}
+
+html {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+.grid-header {
+
+    margin: 0;
+    height: 85vh;
+    width: 100vw;
+    display: grid; /*Lo más importante primero*/
+    grid-template-columns: repeat(40, 1fr);
+    grid-template-rows: repeat(35, 1fr);
+    
+}
+
+/* .grid-container {
+
+    display: grid; Lo más importante primero
+    padding: 20px;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    grid-gap: 4vh;
+
+    grid-template-areas: 
+        /* El puntoito es un "comodín".
+        "header header header"
+        /* Columnas 1 / 2 / 3
+        ". content ."
+        ". content ."
+        ". content .";
+
+} */
+
+.flex-container {
+
+    display: flex; /* El display se ajusta conforme sea necesario */
+    /* flex-direction: column; */ /* Pa' que no esté horizontal (row) */
+    /* Flex wrap*/
+    flex-wrap: wrap;
+    /* Justify content: */
+    justify-content: space-evenly;
+    /* Justify content: */
+    justify-content: space-evenly;
+    /*Align: */
+    align-content: flex-start;
+    text-align: center;
+
+}
+
+.grid-item1 {
+
+    background-color: #25404B;
+    grid-column: 1 / 51;
+    grid-row: 1;
+
+}
+
+.grid-item2 {
+
+    text-align: left;
+    /* Modificando el texto (font):*/
+    background-color: #25404B;
+    font-size: 140%;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 0;
+    
+    margin: 10%;
+    /* 'Flex-shrink', '-grow', '-basis' */
+    /* flex-shrink: 1; /* Default es 1 */
+    /* flex-grow: 2; /* Default es 2; va a intentar que cada item abarque '2' */
+    /* flex-basis: 40px; */
+
+    grid-column: 1 / span 12;
+    grid-row: 1;
+
+}
+
+.grid-item3 {
+
+    /* Modificando el texto (font):*/
+    text-align: left;
+    background-color: #25404B;
+    font-size: 85%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+
+    grid-column: 28 / span 2;
+    grid-row: 1;
+    
+    margin: 38%;
+    padding: 10px;
+    /* 'Flex-shrink', '-grow', '-basis' */
+    flex-shrink: 1; /* Default es 1 */
+    flex-grow: 2; /* Default es 2; va a intentar que cada item abarque '2' */
+    flex-basis: 40px;
+
+}
+
+.grid-item4 {
+
+    /* Modificando el texto (font):*/
+    text-align: left;
+    background-color: #25404B;
+    font-size: 85%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+
+    grid-column: 31 / span 2;
+    grid-row: 1;
+    
+    margin: 38%;
+    padding: 10px;
+    /* 'Flex-shrink', '-grow', '-basis' */
+    /* flex-shrink: 1; /* Default es 1 */
+    /* flex-grow: 2; Default es 2; va a intentar que cada item abarque '2' */
+    /* flex-basis: 40px;*/
+
+}
+
+.grid-item5 {
+
+    /* Modificando el texto (font):*/
+    text-align: right;
+    background-color: #25404B;
+    font-size: 85%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
+    grid-column: 34 / span 2;
+    grid-row: 1;
+    
+    margin: 38%;
+    padding: 10px;
+
+}
+
+.grid-item6 {
+
+    color: white;
+    font-size: 170%;
+    /* https://www.w3schools.com/cssref/pr_font_weight.php */
+    font-weight: bold;
+    /* https://www.w3schools.com/css/css_font.asp */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    place-self: center;
+    text-align: center;
+    grid-row: 2 / 25;
+    grid-column: 1 / 40;
+
+    
+}
+
+.grid-item7 {
+
+    color: white;
+    font-size: 85%;
+    /* https://www.w3schools.com/css/css_font.asp */
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin: 0px;
+    padding: 25px;
+    grid-row: 19 / span 3;
+    grid-column: 5 / 37;
+    
+}
+
+.grid-item8 {
+
+    background-color: #25404B;
+    grid-column: 1 / 51;
+    grid-row: 27 / span 3;
+    
+}
+
+
+/* Para el 'text box', se tomó como referencia:
+https://www.w3schools.com/css/css_form.asp */
+input[type = text], select {
+
+    width: 90%;
+    padding: 2.5px 20px;
+    font-size: 70%;
+    margin: 0px 0;
+    display: inline-block;
+    text-align: left;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    place-content: center;
+    place-self: center;
+    box-sizing: border-box;
+    grid-column: 17 / span 7;
+    grid-row: 28;
+
+}
+
+/* Para el 'suscribe' button, se tomó como referencia: 
+   https://www.w3schools.com/tags/att_input_type_checkbox.asp*/
+input[type = submit], select {
+
+    font-size: 70%;
+    font-weight: bold;
+     /* Fue difícil atinar con el tipo de font, pero se logró!*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background: #A86A18; 
+    width: 120%;
+    text-align: center;
+    padding: 2.5px 5px;
+    margin: 5px 0;
+    border: black;
+    grid-column: 25 / span 5;
+    grid-row: 28;
+    cursor: pointer;
+
+}
+
+.grid-item9 {
+
+    color: white;
+    font-size: 80%;
+    /*https://www.w3schools.com/cssref/pr_font_weight.php*/
+    font-weight: bold;
+    place-self: center;
+    /* https://www.w3schools.com/css/css_font.asp */
+    font-family: Arial, Helvetica, sans-serif;
+    grid-column: 8 / span 9;
+    grid-row: 28;
+    
+}
+
+.grid-item10 {
+
+    background-color: #ffffff;
+    border-color: #ffffff;
+    border-width: 60px;
+    grid-column: 1 / 50;
+    grid-row: 30 / span 3;
+    
+}
+
+.CSS {
+
+    place-self: center;
+    grid-column: 1 / 12;
+    grid-row: 30 / span 2;
+    
+}
+
+.grid-item11 {
+
+    font-size: 65%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #ffffff;
+    align-self: center;
+    text-align: center;
+    grid-column: 1 / 12;
+    grid-row: 32 / span 1;
+    
+}
+
+.HTMLIMAGE {
+
+    place-self: center;
+    grid-column: 14 / 27;
+    grid-row: 30 / span 2;
+    
+}
+
+.grid-item12 {
+
+    font-size: 65%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #ffffff;
+    align-self: center;
+    text-align: center;
+    grid-column: 15 / 26;
+    grid-row: 32 / span 1;
+    
+}
+
+.JAVASCTIPTIMG {
+
+    place-self: center;
+    grid-column: 28 / 39;
+    grid-row: 30 / span 2;
+    
+}
+
+.grid-item13 {
+
+    font-size: 65%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #ffffff;
+    align-self: center;
+    text-align: center;
+    grid-column: 28 / 39;
+    grid-row: 32 / span 1;
+    
+}
+
+.grid-item17 {
+
+    background-color: #25404B;
+    grid-column: 1 / 50;
+    grid-row: 33 / 40;
+    
+}
+
+.grid-item18 {
+
+    font-size: 77%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
+    background-color: #25404B;
+    grid-column: 1 / 50;
+    place-content: center;
+    place-self: center;
+    text-align: center;
+    grid-row: 34;
+    
+}
+
+
