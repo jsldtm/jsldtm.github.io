@@ -67,9 +67,9 @@ if btnGeoPredict:
             user_answer = float(user_input)
             # Accept a small tolerance since ML output may not be exactly 16
             if int(user_answer) == int(pred_next):
-                st.success(f"¡Correcto! El modelo predice: {pred_next}")
+                st.success(f"¡Correcto! El modelo predice: {int(pred_next)}")
             else:
-                st.error(f"Incorrecto. El modelo predice: {pred_next}, tú pusiste: {user_answer}")
+                st.error(f"Incorrecto. El modelo predice: {int(pred_next)}, tú pusiste: {user_answer}")
         except ValueError:
             st.warning("Por favor, ingresa un número válido.")
         
