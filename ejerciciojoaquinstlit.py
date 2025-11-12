@@ -55,7 +55,7 @@ if btnPredict:
 
 # NUEVA SECCIÓN - SERIE GEOMÉTRICA (como se desea)
 st.header("Predicción de serie geométrica")
-st.markdown("Serie: **1, 2, 4, 8, ?**")
+st.markdown("Serie: **1, 2, 4, 8, 16, ?**")
 
 user_input = st.text_input("¿Cuál es el siguiente número en la serie? (Ingresa tu predicción)", "")
 btnGeoPredict = st.button('Verificar predicción')
@@ -67,9 +67,9 @@ if btnGeoPredict:
             user_answer = float(user_input)
             # Accept a small tolerance since ML output may not be exactly 16
             if abs(user_answer - pred_next) < 0.2:
-                st.success(f"¡Correcto! El modelo predice: {pred_next:.2f}")
+                st.success(f"¡Correcto! El modelo predice: {pred_next:}")
             else:
-                st.error(f"Incorrecto. El modelo predice: {pred_next:.2f}, tú pusiste: {user_answer}")
+                st.error(f"Incorrecto. El modelo predice: {pred_next:}, tú pusiste: {user_answer}")
         except ValueError:
             st.warning("Por favor, ingresa un número válido.")
         
