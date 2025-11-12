@@ -76,6 +76,6 @@ if btnGeoPredict:
         # (opcional) Mostrar las predicciones de los primeros términos
         st.markdown("Predicciones del modelo para la serie dada:")
         for i, pred in enumerate(preds):
-            st.write(f"{2**i} → {pred[0]:.2f}")
+            st.write(f"{2**i} → {int(pred[0])}")
     else:
         st.error("Error obteniendo la predicción del modelo.")
